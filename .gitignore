@@ -1,0 +1,428 @@
+# ============================================================================
+# DEPENDENCIES - CRITICAL TO EXCLUDE
+# ============================================================================
+
+# npm dependencies
+node_modules/
+package-lock.json
+
+# Yarn dependencies
+yarn.lock
+.yarn/
+.pnp
+.pnp.js
+
+# pnpm
+pnpm-lock.yaml
+
+# ============================================================================
+# ENVIRONMENT VARIABLES - SECURITY CRITICAL
+# ============================================================================
+
+# Environment files with sensitive data
+.env
+.env.local
+.env.*.local
+.env.production
+.env.development.local
+.env.test.local
+.env.*.local
+
+# Backend environment
+backend/.env
+backend/.env.local
+backend/.env.*.local
+
+# Frontend environment
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# ============================================================================
+# BUILD & DISTRIBUTION FILES
+# ============================================================================
+
+# React build directory
+build/
+dist/
+.next/
+out/
+
+# Production build
+public/build/
+
+# Webpack
+.webpack/
+
+# Babel
+.babelcache/
+
+# ============================================================================
+# LOGS & DEBUGGING
+# ============================================================================
+
+# npm logs
+npm-debug.log*
+npm-error.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+pnpm-error.log*
+
+# Lerna logs
+lerna-debug.log
+
+# Application logs
+logs/
+*.log
+*.logs
+
+# Debug logs
+debug.log
+.debug
+
+# ============================================================================
+# IDE & EDITOR FILES
+# ============================================================================
+
+# Visual Studio Code
+.vscode/
+.vscode
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+.idea
+*.iml
+*.iws
+*.ipr
+out/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Visual Studio
+.vs/
+.vs
+
+# WebStorm
+.webstorm/
+
+# Vim
+.vim/
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# Nano
+.nano_history
+
+# ============================================================================
+# OS & SYSTEM FILES
+# ============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash/
+
+# ============================================================================
+# UPLOADS & FILE STORAGE
+# ============================================================================
+
+# User uploaded files
+uploads/
+backend/uploads/
+public/uploads/
+temp/
+tmp/
+temp-files/
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.sav
+
+# ============================================================================
+# DATABASE & DATA FILES
+# ============================================================================
+
+# Local MongoDB data
+data/
+db/
+.mongodb/
+mongodb/
+
+# Database dumps
+*.dump
+*.sql
+*.sqlite
+*.db
+
+# ============================================================================
+# TESTING
+# ============================================================================
+
+# Coverage reports
+coverage/
+*.lcov
+.nyc_output/
+
+# Test results
+test-results/
+junit.xml
+
+# ============================================================================
+# CACHE FILES
+# ============================================================================
+
+# npm cache
+.npm
+.npm-cache/
+
+# Yarn cache
+.yarn-cache/
+
+# Babel cache
+.babelcache/
+
+# Next.js cache
+.next/
+.cache/
+
+# TypeScript cache
+.tsbuildinfo
+
+# ESLint cache
+.eslintcache
+.eslint-cache/
+
+# Prettier cache
+.prettierignore
+.prettier-cache/
+
+# ============================================================================
+# DEPENDENCIES CACHE
+# ============================================================================
+
+# Node.js
+node_modules/.cache/
+
+# Pip cache (if using Python)
+.pip-cache/
+pip-log.txt
+
+# ============================================================================
+# VSCODE EXTENSIONS
+# ============================================================================
+
+# Folder config file for Visual Studio Code
+.vscode/extensions.json
+.vscode/settings.json
+.vscode/launch.json
+
+# ============================================================================
+# DISTRIBUTION & PACKAGING
+# ============================================================================
+
+# tar, zip, gzip files
+*.tar
+*.tar.gz
+*.zip
+*.rar
+*.7z
+
+# ============================================================================
+# DOCKER & VIRTUALIZATION
+# ============================================================================
+
+# Docker volumes
+volumes/
+docker-volumes/
+
+# Docker compose overrides
+docker-compose.override.yml
+docker-compose.local.yml
+
+# ============================================================================
+# GIT FILES
+# ============================================================================
+
+# Git stash
+.git/
+
+# Git hooks
+.husky/
+.husky/_/
+
+# ============================================================================
+# MISC FILES
+# ============================================================================
+
+# Package manager locks (keep only package-lock.json)
+yarn-error.log
+
+# SSL certificates
+*.pem
+*.cer
+*.cert
+*.key
+
+# Secret files
+*.secret
+*.encrypted
+secrets/
+
+# Credentials
+credentials.json
+service-account-key.json
+
+# ============================================================================
+# APPLICATION SPECIFIC
+# ============================================================================
+
+# Product images (if stored locally - use cloud storage instead)
+public/images/uploads/
+
+# Generated files
+generated/
+dist/
+build/
+
+# Error files
+errors/
+error-logs/
+
+# State files
+.state
+state.json
+
+# ============================================================================
+# BACKUP FILES
+# ============================================================================
+
+backups/
+*.backup
+*.bak
+*.backup.*
+
+# ============================================================================
+# TEMPORARY FILES
+# ============================================================================
+
+.tmp/
+.temp/
+tmp/
+temp/
+
+*.swp
+*.swo
+*~
+\#*\#
+.\#*
+
+# ============================================================================
+# SECURITY & SECRETS MANAGEMENT
+# ============================================================================
+
+# Secrets management files
+.env.vault
+.env.keys
+.env.local.backup
+
+# SSH keys
+id_rsa
+id_rsa.pub
+*.pem
+
+# GPG keys
+*.gpg
+*.asc
+
+# ============================================================================
+# FIREBASE SPECIFIC
+# ============================================================================
+
+# Firebase emulator data
+firebase-debug.log
+
+# ============================================================================
+# WEBPACK & BUILD TOOLS
+# ============================================================================
+
+dist/
+build/
+.webpack-cache/
+.parcel-cache/
+
+# ============================================================================
+# DEVELOPMENT ENVIRONMENT
+# ============================================================================
+
+# Local development files
+.env.local
+.env.development.local
+
+# ============================================================================
+# KEEP THESE FILES (Exceptions)
+# ============================================================================
+
+# Include package.json files (needed for deployment)
+!package.json
+!backend/package.json
+!frontend/package.json
+
+# Include .gitkeep files (to preserve empty directories)
+!.gitkeep
+
+# Include documentation
+!README.md
+!.env.example
+
+# Include GitHub files
+!.github/
+!.gitignore
+
+# ============================================================================
+# NOTES
+# ============================================================================
+
+# This .gitignore file is optimized for the E-Commerce MERN stack project.
+# Key exclusions:
+# 1. node_modules/ - Dependencies (huge, should be installed fresh)
+# 2. .env files - SECURITY CRITICAL (never commit sensitive data)
+# 3. build/ dist/ - Compiled files (regenerated on build)
+# 4. logs/ - Application logs
+# 5. uploads/ - User uploaded files
+# 6. IDE files - .vscode/, .idea/ (developer-specific)
+# 7. OS files - .DS_Store, Thumbs.db
+#
+# SECURITY REMINDERS:
+# - .env files must NEVER be committed
+# - Use .env.example as template for configuration
+# - Credentials should be in environment variables, not files
+# - Review this .gitignore regularly
+# - Keep .env.example updated with all needed keys (no actual values)
+
