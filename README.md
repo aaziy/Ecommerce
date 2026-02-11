@@ -301,9 +301,9 @@ PORT=5000
 NODE_ENV=development
 
 # Database
-MONGODB_URI=mongodb://localhost:27017/ecommerce
-# Or MongoDB Atlas:
-# MONGODB_URI=***REMOVED***
+MONGODB_URI=your_mongodb_connection_string_here
+# Local: mongodb://localhost:27017/ecommerce
+# Atlas: mongodb+srv://username:password@cluster.mongodb.net/ecommerce
 
 # Authentication
 JWT_SECRET=your_super_secret_jwt_key_here_min_32_chars
