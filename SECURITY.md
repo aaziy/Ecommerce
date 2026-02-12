@@ -93,7 +93,7 @@ frontend/.env
 
 ### When Creating `.env.example`
 - [ ] Use generic placeholders: `your_api_key_here`
-- [ ] Include format hints in comments: `***REMOVED***`
+- [ ] Include format hints in comments (without examples): `# See documentation for format`
 - [ ] Never include real credentials or test accounts
 - [ ] Never include sample tokens or API keys
 - [ ] Never include hardcoded secrets from other projects
